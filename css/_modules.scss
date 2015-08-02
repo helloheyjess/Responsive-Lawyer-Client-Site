@@ -1,0 +1,190 @@
+// Highlighting Styles
+.highlight {
+	color: $red;
+}
+
+// Button Styles
+
+.btn {
+	border: 2px solid $red;
+	font-family: $headerFontFam;
+	color: $white;
+	background: transparent;
+	padding: 10px 25px;
+	transition: all 0.5s ease-in-out;
+	&:hover,
+	&:focus {
+		background: $white;
+		color: $red;
+	}
+}
+
+.branding-section,
+.blog-section,
+.contact-section {
+	.btn {
+		color: $black;
+	}
+}
+
+.learn-more-section {
+	.btn {
+		margin: 15px 0;
+	}
+}
+
+.title-btn {
+	background: $gray;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	padding: 2% 4%;
+	margin-top: 1px;
+	width: 100%;
+	border: none;
+	.fa {
+		margin-left: auto;
+	}
+}
+
+.chosen-btn {
+	background: $red;
+	color: $white;
+}
+
+.why-choose-us-list {
+	.title-btn {
+		padding: 20px;
+		border: 1px solid #ddd;
+		margin: 0 1px;
+		width: 100%;
+		background: $white;
+		color: $black;
+		display: block;
+	}
+}
+
+.likes {
+	background: transparent;
+	border: none;
+	transition: all 0.5s ease-in-out;
+	&:hover,
+	&:focus {
+		transform: scale(1.5);
+	}
+}
+
+// Flickity Gallery Styles
+
+.gallery {
+	position: relative;
+	.gallery-cell {
+		width: 250px;
+	}
+	img {
+		display: block;
+	}
+}
+
+.flickity-prev-next-button.previous {
+	position: absolute;
+	left: 0;
+}
+
+.flickity-prev-next-button.next {
+	position: absolute;
+	right: 0;
+}
+
+.flickity-prev-next-button .arrow {
+  fill: $white;
+}
+
+.flickity-prev-next-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+  background: $gray;
+  margin: 0;
+  transition: all 0.5s ease-in-out;
+  &:hover,
+  &:focus {
+  	background: $red;
+  }
+}
+
+.flickity-page-dots {
+  display: none;
+}
+
+.flickity-enabled:focus .flickity-viewport {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+// Anyslider Styles
+
+
+.slider {
+    -ms-touch-action: pan-y; /* Prevent default touch actions on Windows 8. Only required for IE10 */
+    overflow: auto; /* Not required but recommended for accessibility when JavaScript is turned off */
+    position: relative;
+    touch-action: pan-y; /* Prevent default touch actions on Windows 8. Supported in IE11+ */
+}
+
+.as-prev-arrow,
+.as-next-arrow {
+    background: url(../demo/img/arrows.png) no-repeat;
+    cursor: pointer;
+    filter: alpha(opacity=0);
+    height: 40px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 100%;
+    top: 95px;
+    white-space: nowrap;
+    width: 40px;
+    z-index: 1;
+}
+
+.as-prev-arrow {
+    left: 0;
+}
+
+.as-next-arrow {
+    background-position: -40px 0;
+    right: 0;
+}
+
+.slider:hover .as-prev-arrow,
+.slider:hover .as-next-arrow {
+    filter: alpha(opacity=1);
+    opacity: 1;
+}
+
+/* The same rules for styling apply here. Style to your liking */
+.as-nav {
+    margin: 0 auto;
+    width: 54px;
+    z-index: 1;
+    margin-top: 25px;
+
+}
+
+.as-nav a {
+    background: url(../assets/circle.png) no-repeat;
+    height: 16px;
+    display: inline-block;
+    margin: 0 1px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 16px;
+}
+
+.as-nav a:hover,
+.as-nav a:active {
+    background: url(../assets/circle-red.png) no-repeat;
+}

@@ -1,0 +1,277 @@
+// Base Typography Styles
+html {
+	font-size: $baseFontSize;
+}
+
+body {
+	font-family: $baseFontFam;
+	color: $gray;
+
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+// Headings
+
+// All Headings
+h1, h2, h3, h4, h5 {
+	font-family: $headerFontFam;
+	color: $gray;
+	font-weight: normal;
+}
+
+// First Level Heading
+h1 {
+	margin: 0;
+	@media all and (max-width: 530px) {
+		font-size: 1.5rem;
+	}
+}
+
+// Second Level Headings
+h2 {
+	font-size: 3rem;
+}
+
+.branding-section {
+	h2 {
+		font-size: 4rem;
+		margin: 0;
+		@media all and (max-width: 925px) {
+			font-size: 3.5em;
+		}
+		@media all and (max-width: 775px) {
+			font-size: 3em;
+		}
+	}
+}
+
+.branding-section,
+.team-section,
+.blog-section {
+	h2 {
+		margin: 0;
+	}
+}
+
+.testimonial-section {
+	h2 {
+		text-transform: capitalize;
+		@media all and (max-width: 500px) {
+			font-size: 2.5em;
+		}
+		@media all and (max-width: 350px) {
+			font-size: 2em;
+		}
+	}
+}
+
+.practice-section,
+.consultation-section {
+	h2 {
+		margin-top: 0;
+	}
+}
+
+.consultation-section {
+	h2 {
+		color: $white;
+	}
+}
+
+.contact-section h2 {
+	margin-bottom: 0;
+}
+
+
+// Third Level Headings
+h3 {
+	font-size: 2em;
+	color: $white;
+}
+
+.law-fields-section {
+	h3 {
+		color: $gray;
+	}
+}
+
+.branding-section {
+	h3 {
+		background: $red;
+		padding: 10px 25px;
+		display: inline-block;
+		font-size: 1.5rem;
+		font-weight: normal;
+	}
+}
+
+.learn-more-section {
+	h3 {
+		margin: 0;
+	}
+}
+
+// Fourth Level Headings
+h4 {
+	font-family: $baseFontFam;
+}
+
+.stats-section {
+	h4 {
+		color: $red;
+		font-size: 1.5rem;
+	}
+}
+
+// Fifth Level Headings
+h5 {
+	font-size: 1.5rem;
+	margin-bottom: 0;
+}
+
+// Sixth Level Headings
+h6 {
+	font-family: $headerFontFam;
+	font-size: 1.2rem;
+	margin: 0;
+}
+
+// Paragraphs
+p {
+	line-height: 1.5;
+}
+
+.law-fields-section {
+	color: lighten($gray, 25);
+}
+
+.expanded {
+	p {
+		color: $gray;
+	}
+}
+
+.attorney-list {
+	p {
+		margin-top: 0;
+		color: $red;
+	}
+}
+
+.blog-section {
+	p,
+	a {
+		color: $white;
+		margin: 0;
+	}
+}
+
+.contact-info {
+	p {
+		margin: 0;
+	}
+}
+
+// Links
+a {
+	color: $black;
+	font-family: $baseFontFam;
+	text-decoration: none;
+	color: $gray;
+	transition: all 0.5s ease-in-out;
+	&:hover {
+		color: $red;
+	}
+}
+
+.nav-bar {
+	a {
+		text-transform: uppercase;
+	}
+}
+
+.social-list {
+	a {
+		color: lighten($gray, 12);
+		&:hover,
+		&:focus {
+			color: $gray;
+		}
+	}
+}
+
+.why-us {
+	color: $white;
+}
+
+.blog-item {
+	a {
+		font-family: $headerFontFam;
+	}
+}
+
+.footer-top {
+	a {
+		color: $red;
+	}
+}
+
+// Blockquotes
+blockquote {
+	margin: 10px auto 25px auto;
+	&:before {
+		font-family: "FontAwesome";
+		content: "\f10d";
+		color: $red;
+		font-size: 2rem;
+		margin-right: 20px;
+		display: block;
+		float: left;
+		@media all and (max-width: 650px) {
+			float: none;
+			text-align: center;
+			margin-right: 0;
+		}
+	}
+}
+
+.testimonial-section {
+	blockquote {
+		position: relative;
+		padding: 0 50px;
+		color: #999;
+		font-style: italic;
+		font-size: 1.2rem;
+		&:before,
+		&:after {
+			position: absolute;
+			top: 0;
+			font-family: "FontAwesome";
+			font-style: normal;
+			color: $red;
+		}
+		&:before {
+			content: "\f10d";
+			margin-right: 10px;
+			float: none;
+			left: 0;
+		}
+		&:after {
+			content: "\f10e";
+			font-size: 2rem;
+			margin-left: 10px;
+			right: 0;
+		}
+		.author {
+			font-weight: 700;
+			color: $black;
+			font-style: normal;
+			font-family: $headerFontFam;
+		}
+	}
+}
