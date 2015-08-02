@@ -34,7 +34,7 @@ $(function(){
 
 	// Dropdown Navigation for Mobile
 	$('.nav-bar .fa-bars').on('click', function() {
-	  $('.site-navigation, .social-list').toggleClass('show-me');
+	  $('.site-navigation').toggleClass('show-me');
 	});
 	$('.site-navigation a').on('click', function() {
 		$('.site-navigation').toggleClass('show-me');
